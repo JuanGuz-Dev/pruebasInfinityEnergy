@@ -247,26 +247,29 @@
     color: #eee;
   }
   
-  /* WhatsApp flotante */
-  .whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25d366;
-    color: white;
-    font-size: 2rem;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: transform 0.3s;
-  }
-  .whatsapp-float:hover { transform: scale(1.1); }
-  
+/* Botón de WhatsApp en header */
+.whatsapp-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #25d366;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.whatsapp-header:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+}
+.nav__links {
+  display: flex;
+  align-items: center;
+}
   /* Animaciones reveal */
   .reveal {
     opacity: 0;
