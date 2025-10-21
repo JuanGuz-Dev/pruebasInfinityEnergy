@@ -301,7 +301,35 @@
   @media(min-width: 1200px){
     .soluciones-grid { grid-template-columns: repeat(5, 1fr); }
   }
-  
+  /* Ajustes responsive para el botón WhatsApp */
+@media (max-width: 768px) {
+  .nav__wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav__links {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .whatsapp-header {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.9rem;
+    margin-left: 0; /* quita el margen que lo empuja */
+  }
+
+  .whatsapp-header span {
+    display: none; /* oculta el texto, deja solo el ícono */
+  }
+
+  .whatsapp-header svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
   .solucion-item {
     background: #fff;
     border: 1px solid var(--border);
